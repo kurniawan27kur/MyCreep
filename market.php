@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link  rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link  rel="stylesheet" href="style.css">
+    <link  rel="stylesheet" href="market.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet"> 
@@ -44,6 +44,140 @@
   </div>
 </nav>
 
+<section id="listcard">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Market Place</h1>
+        <h2>Start your own MyCreep collection</h2>
+      </div>
+    </div>
+
+    <div class="input text-center">
+        <input type="text" name="search" class="w100" placeholder="Search">
+        <input type="hidden" name="page" value="2">
+        <input type="hidden" name="loading" value="0">                    
+      </div>
+
+        <div class="row">
+          <div class="col-3">
+          <div class="card">
+  <img src="img/team6.png" class="card-img-top" alt="card1">
+  <div class="card-body">
+    <h3 class="card-title">Racing Card</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+    </div>
+          </div>
+
+          <div class="col-3">
+          <div class="card">
+  <img src="img/team6.png" class="card-img-top" alt="card1">
+  <div class="card-body">
+    <h3 class="card-title">Racing Card</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+    </div>
+          </div>
+
+          <div class="col-3">
+          <div class="card">
+  <img src="img/team6.png" class="card-img-top" alt="card1">
+  <div class="card-body">
+    <h3 class="card-title">Racing Card</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+    </div>
+          </div>
+
+          <div class="col-3">
+          <div class="card">
+  <img src="img/team6.png" class="card-img-top" alt="card1">
+  <div class="card-body">
+    <h3 class="card-title">Racing Card</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+    </div>
+          </div>
+
+          <div class="col-3">
+          <div class="card">
+  <img src="img/team6.png" class="card-img-top" alt="card1">
+  <div class="card-body">
+    <h3 class="card-title">Racing Card</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+    </div>
+          </div>
+
+          <div class="col-3">
+          <div class="card">
+  <img src="img/team6.png" class="card-img-top" alt="card1">
+  <div class="card-body">
+    <h3 class="card-title">Racing Card</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+    </div>
+          </div>
+
+          <div class="col-3">
+          <div class="card">
+  <img src="img/team6.png" class="card-img-top" alt="card1">
+  <div class="card-body">
+    <h3 class="card-title">Racing Card</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+    </div>
+          </div>
+
+          <div class="col-3">
+          <div class="card">
+  <img src="img/team6.png" class="card-img-top" alt="card1">
+  <div class="card-body">
+    <h3 class="card-title">Racing Card</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+    </div>
+          </div>
+
+        </div>
+        </div>
+
+</section>
+
+
 <footer>
 <section id="footer" class="footer text-center">
 <div class="container">
@@ -62,5 +196,5 @@
 
   </body>
 
-  
+
 </html>

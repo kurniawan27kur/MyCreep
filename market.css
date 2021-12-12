@@ -1,0 +1,86 @@
+body {
+    background-color: #180431f3;
+}
+
+.navbar-brand {
+    font-family: 'MV Boli', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.nav-item :hover {
+    color: #BE3CFC;
+}
+
+.navbar :hover {
+        color: #BE3CFC;
+}
+
+.nav-link {
+    color: white;
+    font-size: 17px;
+}
+
+#footer {
+    padding-top: 10px;
+    background-color: #32054E;
+    box-shadow: 0px -4px 6px rgb(0 0 0 / 16%);
+}
+
+h6 {
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+h1 {
+    padding-top: 90px;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+}
+
+h2 {
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.card {
+    padding: 20px;
+    background-color: rgba(34, 34, 62, 0.5);
+    border: 1px solid #d51fd5;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #4d2fe5, #d51fd5, #fb767c);
+    color: white;
+    margin: 20px 10px 20px 0;
+}
+
+.list-group-item {
+    color: white;
+    padding: 10px;
+    background-color: rgba(91, 14, 126, 0);
+    border: 1px solid #d51fd5;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #4d2fe5, #d51fd5, #fb767c);
+}
+
+.input {
+    padding: 20px 0 10px 0;
+}
+
+.w100 {
+    padding: 10px 10px;
+    background-color: rgba(34, 34, 62, 0.5);
+    border: 1px solid #d51fd5;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #4d2fe5, #d51fd5, #fb767c);
+    width: 70%;
+    color: white;
+}

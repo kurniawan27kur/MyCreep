@@ -82,8 +82,8 @@
     </div>
     <div class="col">
     <img src="img/team4.png" alt="team4" width="150" class="rounded-circle"/>
-    <h4>Kurniawan Azziz</h4>
-    <h4>19.11.3223</h4>
+    <h4>Muhamad Fahmuddin</h4>
+    <h4>19.11.3245</h4>
     </div>
   </div>
 
