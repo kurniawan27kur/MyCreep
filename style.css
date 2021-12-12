@@ -1,0 +1,121 @@
+body {
+    background-color: #180431e5;
+}
+
+section {
+    padding-top: 3rem;
+}
+
+.jumbotron {
+    padding-top: 4rem;
+    background-color: #180431;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.navbar-brand {
+    font-family: 'MV Boli', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.display-4 {
+    font-family: 'Play', sans-serif;
+    padding: 40px 0 0 0;
+}
+
+.nft {
+    width: 1890px;
+    padding: 0 0 90px 0;
+}
+
+#about {
+    color: white;
+    padding-top: 70px;
+}
+
+h2 {
+    padding: 20px 0 0 0;
+}
+
+p {
+    padding: 10px 600px 30px 600px;
+}
+
+h3 {
+    color: white;
+    padding: 10px 0 20px 0;
+}
+
+h4 {
+    color: white;
+
+}
+
+#team {
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+#kontak {
+    background-color: #180431;
+    color: white;
+    padding-bottom: 80px;
+}
+
+.nav-item :hover {
+    color: #BE3CFC;
+}
+
+.navbar :hover {
+        color: #BE3CFC;
+}
+
+.nav-link {
+    color: white;
+    font-size: 17px;
+}
+
+form {
+    padding: 20px;
+    background-color: rgba(34, 34, 62, 0.5);
+    border: 1px solid #d51fd5;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #4d2fe5, #d51fd5, #fb767c);
+}
+
+h5 {
+    padding: 35px 0 20px 0;
+    font-size: 25px;
+}
+
+.form-control {
+    background-color: rgba(196, 196, 196, 0.151);;
+    border: 1px solid #860f86;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+h6 {
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+.btn {
+    background-color: rgb(49, 4, 88);
+    border: 1px solid #d51fd5;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom , #4d2fe5, #d51fd5, #fb767c);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#footer {
+    padding-top: 10px;
+    background-color: #32054E;
+    box-shadow: 0px -4px 6px rgb(0 0 0 / 16%);
+}
