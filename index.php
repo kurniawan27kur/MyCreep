@@ -54,10 +54,10 @@
 <section id="about" class="about text-center">
 <div class="display">
   <h2>What Is MyCreep</h2>
-    <p>MyCreep is a collection of digital art toy NFT running on Solana blockchain. Mybrick will be reborn in
-      the metaverse of Ro:Mong by the owner and will live the new life with the owner. The benefits of the
-      owners is the access to the Myspace, where the NFTs can be displayed and can be built to a larger
-      space for more NFTs and luxurys. More benefits and features will be announced.</p>
+    <p>MyCreep adalah kumpulan karya seni digital NFT.
+      Dimana pengunjung dapat melihat karya seni digital NFT yang ditampilkan.
+      Pengunjung hanya dapat melihat, jika tertarik untuk membeli karya seni digital NFT yang kami tampilkan dapat menghubungi kami
+      melalui kontak yang telah disediakan.</p>
     </div>
     </section>
 
