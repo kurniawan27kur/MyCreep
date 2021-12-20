@@ -1,0 +1,32 @@
+body {
+    background-color: #180431f3;
+}
+
+form {
+    padding: 20px;
+    margin: 50% 20% 0 20%;
+    color: white;
+    background-color: rgba(34, 34, 62, 0.5);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.logo {
+    padding: 0 0 20px 0;
+    color: white;
+}
+
+.btn {
+    background-color: rgb(123, 26, 161);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.form-control {
+    background-color: rgba(196, 196, 196, 0.151);;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
+}
