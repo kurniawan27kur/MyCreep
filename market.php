@@ -59,122 +59,35 @@
         <input type="hidden" name="loading" value="0">                    
       </div>
 
+      <?php
+          include("config.php");
+          $sql = "SELECT product_name,product_price,network,product_status FROM tb_product";
+          $hasil = mysqli_query($conn, $sql);
+          while ($data = mysqli_fetch_array($hasil)) {
+          ?>
+          
+        <div class="container navbar-collapse">
         <div class="row">
-          <div class="col-3">
+        <div class="col-3">
           <div class="card">
   <img src="img/team6.png" class="card-img-top" alt="card1">
   <div class="card-body">
-    <h3 class="card-title">Racing Card</h3>
+    <h3 class="card-title"><?php echo '<font color="white">' . $data['product_name'] . '</font>'?></h3>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
+    <li class="list-group-item"><?php echo '<font color="white">' . $data['product_price'] . '</font>'?></li>
+    <li class="list-group-item"><?php echo '<font color="white">' . $data['network'] . '</font>'?></li>
+    <li class="list-group-item"><?php echo '<font color="white">' . $data['product_status'] . '</font>'?></li>
   </ul>
     </div>
           </div>
-
-          <div class="col-3">
-          <div class="card">
-  <img src="img/team6.png" class="card-img-top" alt="card1">
-  <div class="card-body">
-    <h3 class="card-title">Racing Card</h3>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-    </div>
+          </div>
           </div>
 
-          <div class="col-3">
-          <div class="card">
-  <img src="img/team6.png" class="card-img-top" alt="card1">
-  <div class="card-body">
-    <h3 class="card-title">Racing Card</h3>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-    </div>
-          </div>
-
-          <div class="col-3">
-          <div class="card">
-  <img src="img/team6.png" class="card-img-top" alt="card1">
-  <div class="card-body">
-    <h3 class="card-title">Racing Card</h3>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-    </div>
-          </div>
-
-          <div class="col-3">
-          <div class="card">
-  <img src="img/team6.png" class="card-img-top" alt="card1">
-  <div class="card-body">
-    <h3 class="card-title">Racing Card</h3>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-    </div>
-          </div>
-
-          <div class="col-3">
-          <div class="card">
-  <img src="img/team6.png" class="card-img-top" alt="card1">
-  <div class="card-body">
-    <h3 class="card-title">Racing Card</h3>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-    </div>
-          </div>
-
-          <div class="col-3">
-          <div class="card">
-  <img src="img/team6.png" class="card-img-top" alt="card1">
-  <div class="card-body">
-    <h3 class="card-title">Racing Card</h3>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-    </div>
-          </div>
-
-          <div class="col-3">
-          <div class="card">
-  <img src="img/team6.png" class="card-img-top" alt="card1">
-  <div class="card-body">
-    <h3 class="card-title">Racing Card</h3>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-    </div>
-          </div>
-
-        </div>
-        </div>
-
+    <?php 
+     }
+    ?>
+    
 </section>
 
 
