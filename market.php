@@ -44,7 +44,7 @@
   </div>
 </nav>
 
-<section id="listcard">
+<section id="place">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -59,14 +59,16 @@
         <input type="hidden" name="loading" value="0">                    
       </div>
 
+      </section>
+
       <?php
           include("config.php");
           $sql = "SELECT product_name,product_price,network,product_status FROM tb_product";
           $hasil = mysqli_query($conn, $sql);
           while ($data = mysqli_fetch_array($hasil)) {
           ?>
-          
-        <div class="container navbar-collapse">
+      <section id="listcard">
+        <div class="container">
         <div class="row">
         <div class="col-3">
           <div class="card">
@@ -83,12 +85,11 @@
           </div>
           </div>
           </div>
-
-    <?php 
-     }
-    ?>
     
 </section>
+<?php 
+     }
+    ?>
 
 
 <footer>
