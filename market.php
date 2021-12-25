@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
 
-    <title>Home - MyCreep</title>
+    <title>Market - MyCreep</title>
   </head>
   <body id="home">
   <nav class="navbar navbar-expand-lg shadow-lg fixed-top"
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="input text-center">
+    <div class="input">
         <input type="text" name="search" class="w100" placeholder="Search">
         <input type="hidden" name="page" value="2">
         <input type="hidden" name="loading" value="0">                    
@@ -61,35 +61,37 @@
 
       </section>
 
-      <?php
+<section id="listcard">
+  <div class="container">
+  <div class="row">
+  <?php
           include("config.php");
-          $sql = "SELECT product_name,product_price,network,product_status FROM tb_product";
+          $sql = "SELECT product_name,product_price,network,product_status,currency,link_product FROM tb_product";
           $hasil = mysqli_query($conn, $sql);
           while ($data = mysqli_fetch_array($hasil)) {
           ?>
-      <section id="listcard">
-        <div class="container">
-        <div class="row">
-        <div class="col-3">
-          <div class="card">
+    <div class="col-3">
+    <div class="card">
   <img src="img/team6.png" class="card-img-top" alt="card1">
   <div class="card-body">
     <h3 class="card-title"><?php echo '<font color="white">' . $data['product_name'] . '</font>'?></h3>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item"><?php echo '<font color="white">' . $data['product_price'] . '</font>'?></li>
+    <li class="list-group-item"><?php echo '<font color="white">' . $data['product_price']." ".$data['currency'] .'</font>'?></li>
     <li class="list-group-item"><?php echo '<font color="white">' . $data['network'] . '</font>'?></li>
     <li class="list-group-item"><?php echo '<font color="white">' . $data['product_status'] . '</font>'?></li>
   </ul>
-    </div>
-          </div>
-          </div>
-          </div>
-    
-</section>
-<?php 
+  <button type="submit" class="btn" href="<?php $data['link_product']?>">BUY</button>
+
+        </div>
+      </div>
+      <?php 
      }
     ?>
+    </div>
+  </div>
+
+</section>
 
 
 <footer>

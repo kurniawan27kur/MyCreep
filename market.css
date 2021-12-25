@@ -84,3 +84,15 @@ h2 {
     width: 70%;
     color: white;
 }
+
+button {
+    margin: 20px 70px 0 70px;
+}
+
+.btn {
+    background-color: rgba(34, 34, 62, 0.5);
+    border: 1px solid #d51fd5;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #4d2fe5, #d51fd5, #fb767c);
+    color: white;
+}
