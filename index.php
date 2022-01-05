@@ -65,22 +65,22 @@
 <div class="container">
   <h3>Team</h3>
   <div class="row align-items-start">
-    <div class="col">
+    <div class="col-md-3 mb-3">
     <img src="img/team2.png" alt="team2" width="150"/>
     <h4>Sofyan Adi Saputra</h4>
     <h4>19.11.3196</h4>
     </div>
-    <div class="col">
+    <div class="col-md-3 mb-3">
     <img src="img/team1.png" alt="team1" width="150"/>
     <h4>Kurniawan Azziz</h4>
     <h4>19.11.3223</h4>
     </div>
-    <div class="col">
+    <div class="col-md-3 mb-3">
     <img src="img/team3.png" alt="team3" width="150"/>
     <h4>Galih Waskito Utomo</h4>
     <h4>19.11.3232</h4>
     </div>
-    <div class="col">
+    <div class="col-md-3 mb-3">
     <img src="img/team4.png" alt="team4" width="150" class="rounded-circle"/>
     <h4>Muhamad Fahmuddin</h4>
     <h4>19.11.3245</h4>

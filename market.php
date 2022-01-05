@@ -66,11 +66,11 @@
   <div class="row">
   <?php
           include("config.php");
-          $sql = "SELECT product_name,product_price,network,product_status,currency,link_product FROM tb_product";
+          $sql = "SELECT product_name,product_price,network,product_status,currency,link_product FROM tb_product ORDER BY product_id DESC";
           $hasil = mysqli_query($conn, $sql);
           while ($data = mysqli_fetch_array($hasil)) {
           ?>
-    <div class="col-3">
+    <div class="col-md-3 mb-3">
     <div class="card">
   <img src="img/team6.png" class="card-img-top" alt="card1">
   <div class="card-body">
@@ -81,7 +81,7 @@
     <li class="list-group-item"><?php echo '<font color="white">' . $data['network'] . '</font>'?></li>
     <li class="list-group-item"><?php echo '<font color="white">' . $data['product_status'] . '</font>'?></li>
   </ul>
-  <button type="submit" class="btn" href="<?php $data['link_product']?>">BUY</button>
+  <button  type="submit" class="btn"> <a href="<?php echo $data['link_product']?>" target='_blank'>BUY</a> </button>
 
         </div>
       </div>

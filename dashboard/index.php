@@ -37,7 +37,7 @@
                         <i class="fa fa-bell fa-lg box-icon" aria-hidden="true"></i>Notifikasi
                     </a>
                     <hr class="soft my-1 bg-white">
-                    <a class="nav-link px-3" href="#">
+                    <a class="nav-link px-3" href="login.php">
                         <i class="fa fa-sign-out fa-lg box-icon" aria-hidden="true"></i>LogOut
                     </a>
                 </nav>

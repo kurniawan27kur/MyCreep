@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/app/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="./dist/css/index.css">
+    <link rel="stylesheet" href="./dist/css/product.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
@@ -37,10 +38,73 @@
                         <i class="fa fa-bell fa-lg box-icon" aria-hidden="true"></i>Notifikasi
                     </a>
                     <hr class="soft my-1 bg-white">
-                    <a class="nav-link px-3" href="#">
+                    <a class="nav-link px-3" href="login.php">
                         <i class="fa fa-sign-out fa-lg box-icon" aria-hidden="true"></i>LogOut
                     </a>
                 </nav>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+            <div class="d-flex justify-content-between mb-2">
+            <h3>Data Product</h3>
+            <h4 type="submit"> <a class="d-inline p-2 bg-primary text-white btn" href="upload.php">Upload</a></h4>
+            </div>
+                <div class="box">
+                    <table class="table table-bordered">
+                        <thead class="text-center">
+                            <td >ID</td>
+                            <td>Product Name</td>
+                            <td>Product Price</td>
+                            <td>Product Image</td>
+                            <td>Product Status</td>
+                            <td>Network</td>
+                            <td>Link Product</td>
+                            <td>Currency</td>
+                            <td>Action</td>
+                        </thead>
+                        <tbody>
+                        <?php
+                             include("../config.php");
+                                $sql = "SELECT * FROM tb_product ORDER BY product_id ASC";
+                                $hasil = mysqli_query($conn, $sql);
+                                while ($data = mysqli_fetch_array($hasil)) {
+                                ?>
+                            <tr>
+                                <td class="text-center" name="product_id"> <?php echo $data['product_id'] ?></td>
+                                <td> <?php echo $data['product_name'] ?></td>
+                                <td> <?php echo $data['product_price'] ?></td>
+                                <td> <?php echo $data['product_image'] ?></td>
+                                <td> <?php echo $data['product_status'] ?></td>
+                                <td> <?php echo $data['network'] ?></td>
+                                <td class="link col-12 text-center" type="submit"> <a href="<?php echo $data['link_product']?>" class="text-decoration-none" target='_blank'>Klik Disini</a></td>
+                                <td> <?php echo $data['currency'] ?></td>
+                                <td class="edit col-12 text-center text-decoration-none" type="submit"> 
+                                    <a href="edit.php" class="text-decoration-none" style="color: green;">Edit | </a>
+                                    <a name="delete" class="text-decoration-none" style="color: red;">Delete</a></td>
+                            </tr>
+                            <?php
+                            include("../config.php");
+
+                            if(isset($_GET['delete']))
+                            {
+                            $product_id   = $_GET['product_id'];
+                            // query SQL untuk insert data
+                            $query="DELETE from tb_product where tb_product='$product_id'";
+                            mysqli_query($coon, $query);
+                            // mengalihkan ke halaman index.php
+                            header("location:product.php");
+
+                            }
+                            ?>
+
+                            <?php
+                                }
+                                ?>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
