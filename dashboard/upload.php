@@ -61,6 +61,11 @@
             </div>
 
             <div class="mb-3 col-6">
+            <label for="product_image" class="form-label">Product Image</label>
+            <input type="file" class="form-control" id="product_image" name="product_image">
+            </div>
+
+            <div class="mb-3 col-6">
             <label for="product_status" class="form-label">Product Status</label>
             <input type="text" class="form-control" id="product_status" name="product_status">
             </div>
@@ -92,21 +97,14 @@
           {	 
              $product_name = $_POST['product_name'];
              $product_price = $_POST['product_price'];
+             $product_image = $_FILES['product_image'];
              $product_status = $_POST['product_status'];
              $network = $_POST['network'];
              $link_product = $_POST['link_product'];
              $currency = $_POST['currency'];
 
-             $sql = "INSERT INTO tb_product (product_name,product_price,product_status,network,link_product,currency)
-             VALUES ('$product_name','$product_price','$product_status','$network','$link_product','$currency')";
-
-             if (mysqli_query($conn, $sql)) {
-              echo "New record created successfully !";
-             } else {
-              echo "Error: " . $sql . "
-          " . mysqli_error($conn);
-             }
-             mysqli_close($conn);
+             $sql = mysqli_query($conn,"INSERT INTO tb_product (product_name,product_price,product_image,product_status,network,link_product,currency)
+             VALUES ('$product_name','$product_price',''$product_image'','$product_status','$network','$link_product','$currency')");
           }
           ?>
 

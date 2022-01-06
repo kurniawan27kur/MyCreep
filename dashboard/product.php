@@ -81,24 +81,10 @@
                                 <td class="link col-12 text-center" type="submit"> <a href="<?php echo $data['link_product']?>" class="text-decoration-none" target='_blank'>Klik Disini</a></td>
                                 <td> <?php echo $data['currency'] ?></td>
                                 <td class="edit col-12 text-center text-decoration-none" type="submit"> 
-                                    <a href="edit.php" class="text-decoration-none" style="color: green;">Edit | </a>
-                                    <a name="delete" class="text-decoration-none" style="color: red;">Delete</a></td>
+                                    <a class="text-decoration-none" style="color: green;" href="edit.php?product_id=<?php echo $data["product_id"];?>">Edit | </a>
+                                    <a class="text-decoration-none" style="color: red;" href="delete.php?product_id=<?php echo $data["product_id"];?>">Delete</a>
+                                </td>
                             </tr>
-                            <?php
-                            include("../config.php");
-
-                            if(isset($_GET['delete']))
-                            {
-                            $product_id   = $_GET['product_id'];
-                            // query SQL untuk insert data
-                            $query="DELETE from tb_product where tb_product='$product_id'";
-                            mysqli_query($coon, $query);
-                            // mengalihkan ke halaman index.php
-                            header("location:product.php");
-
-                            }
-                            ?>
-
                             <?php
                                 }
                                 ?>
