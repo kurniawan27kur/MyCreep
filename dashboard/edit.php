@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard-Update</title>
     <link rel="stylesheet" href="./assets/app/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="./dist/css/index.css">
@@ -76,45 +76,46 @@ if (isset($_POST['update'])) // when click on Update button
         <form action="" method="POST">
           <div class="container">
             <div class="box">
-            <h3>Add Product</h3>
-
-            <div class="mb-3 col-6">
+            <h3 class="bg-white rounded shadow p-3 mb-3">Edit Product</h3>
+            
+            <div class="meng bg-white rounded shadow p-4">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="product_name" class="form-label">Product Name</label>
             <input style="color: gray;" type="text" class="form-control" id="product_name" name="product_name" value="<?php echo $data['product_name'];?>">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="product_price" class="form-label">Product Price</label>
             <input style="color: gray;" type="text" class="form-control" id="product_price" name="product_price" value="<?php echo $data['product_price'];?>">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="product_image" class="form-label">Product Image</label>
             <input style="color: gray;" type="file" class="form-control" id="product_image" name="product_image" value="<?php echo $data['product_image'];?>">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="product_status" class="form-label">Product Status</label>
             <input style="color: gray;" type="text" class="form-control" id="product_status" name="product_status" value="<?php echo $data['product_status'];?>">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="network" class="form-label">Network</label>
             <input style="color: gray;" type="text" class="form-control" id="network" name="network" value="<?php echo $data['network'];?>">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="link_product" class="form-label">Link Product</label>
             <input style="color: gray;" type="text" class="form-control" id="link_product" name="link_product" value="<?php echo $data['link_product'];?>">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="currency" class="form-label">Currency</label>
             <input style="color: gray;" type="text" class="form-control" id="currency" name="currency" value="<?php echo $data['currency'];?>">
             </div>
-
-            <button type="submit" class="btn btn-primary" name="update">Update</button>
             </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 col-2 rounded shadow p-2" name="update">Update</button>
           </div>
 </form>
 

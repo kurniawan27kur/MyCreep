@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard-Upload</title>
     <link rel="stylesheet" href="./assets/app/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="./dist/css/index.css">
@@ -45,48 +45,49 @@
             </div>
         </div>
 
-        <form action="" method="POST">
+        <form action="" method="POST" enctype="multipart/form-data">
           <div class="container">
             <div class="box">
-            <h3>Add Product</h3>
+            <h3 class="mb-3 bg-white rounded shadow p-3">Add Product</h3>
 
-            <div class="mb-3 col-6">
+            <div class="card bg-white rounded shadow p-4">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="product_name" class="form-label">Product Name</label>
             <input type="text" class="form-control" id="product_name" name="product_name">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="product_price" class="form-label">Product Price</label>
             <input type="text" class="form-control" id="product_price" name="product_price">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="product_image" class="form-label">Product Image</label>
             <input type="file" class="form-control" id="product_image" name="product_image">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="product_status" class="form-label">Product Status</label>
             <input type="text" class="form-control" id="product_status" name="product_status">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="network" class="form-label">Network</label>
             <input type="text" class="form-control" id="network" name="network">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="link_product" class="form-label">Link Product</label>
             <input type="text" class="form-control" id="link_product" name="link_product">
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="currency" class="form-label">Currency</label>
             <input type="text" class="form-control" id="currency" name="currency">
             </div>
-
-            <button type="submit" class="btn btn-primary" name="proses">Submit</button>
             </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 col-2 rounded shadow p-2" name="proses">Submit</button>
           </div>
 </form>
 
@@ -97,14 +98,37 @@
           {	 
              $product_name = $_POST['product_name'];
              $product_price = $_POST['product_price'];
-             $product_image = $_FILES['product_image'];
              $product_status = $_POST['product_status'];
              $network = $_POST['network'];
              $link_product = $_POST['link_product'];
              $currency = $_POST['currency'];
 
+             $product_image = $_FILES['product_image']['name'];
+             $tmp_name = $_FILES['product_image']['tmp_name'];
+
+             $type1 = explode('.',$product_image);
+             $type2 = $type1[1];
+
+             $newname = 'NFT'.time().'.'.$type2;
+
+             $ijin = array('jpg','jpeg','png','gif','mp4');
+
+             if(!in_array($type2,$ijin)){
+                 echo '<script>alert("Format File Salah")</script>';
+             }else{
+                 move_uploaded_file($tmp_name,'img/'.$newname);
+             }
+
              $sql = mysqli_query($conn,"INSERT INTO tb_product (product_name,product_price,product_image,product_status,network,link_product,currency)
-             VALUES ('$product_name','$product_price',''$product_image'','$product_status','$network','$link_product','$currency')");
+             VALUES ('$product_name','$product_price','$product_image','$product_status','$network','$link_product','$currency')");
+
+            if ($sql) {
+            mysqli_close($conn); // Close connection
+            header("location:product.php"); // redirects to all records page
+            exit;
+            } else {
+   
+            }
           }
           ?>
 

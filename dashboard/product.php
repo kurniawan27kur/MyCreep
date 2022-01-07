@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard-Product</title>
     <link rel="stylesheet" href="./assets/app/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="./dist/css/index.css">
@@ -47,11 +47,11 @@
 
         <div class="section">
             <div class="container">
-            <div class="d-flex justify-content-between mb-2">
+            <div class="d-flex justify-content-between mb-2 mt-4 d-block bg-white rounded shadow p-3">
             <h3>Data Product</h3>
-            <h4 type="submit"> <a class="d-inline p-2 bg-primary text-white btn" href="upload.php">Upload</a></h4>
+            <h4 type="submit"> <a class="d-inline p-2 bg-primary text-white btn"  href="upload.php">Upload</a></h4>
             </div>
-                <div class="box">
+                <div class="box d-block bg-white rounded shadow p-3">
                     <table class="table table-bordered">
                         <thead class="text-center">
                             <td >ID</td>

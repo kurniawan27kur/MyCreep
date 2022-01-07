@@ -2,3 +2,11 @@
     padding-top: 30px;
     margin-left: 5%;
 }
+
+body {
+    background-color: rgb(221, 221, 221);
+}
+
+.btn {
+    margin-left: 45%;
+}

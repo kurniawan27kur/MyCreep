@@ -66,13 +66,13 @@
   <div class="row">
   <?php
           include("config.php");
-          $sql = "SELECT product_name,product_price,network,product_status,currency,link_product FROM tb_product ORDER BY product_id DESC";
+          $sql = "SELECT product_name,product_price,product_image,network,product_status,currency,link_product FROM tb_product ORDER BY product_id DESC";
           $hasil = mysqli_query($conn, $sql);
           while ($data = mysqli_fetch_array($hasil)) {
           ?>
     <div class="col-md-3 mb-3">
     <div class="card">
-  <img src="img/team6.png" class="card-img-top" alt="card1">
+  <li><img src="img/<?php echo $data['product_image']?>" class="card-img-top" alt="card1"></li>
   <div class="card-body">
     <h3 class="card-title"><?php echo '<font color="white">' . $data['product_name'] . '</font>'?></h3>
   </div>
