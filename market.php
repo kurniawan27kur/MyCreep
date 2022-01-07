@@ -72,7 +72,7 @@
           ?>
     <div class="col-md-3 mb-3">
     <div class="card">
-  <li><img src="img/<?php echo $data['product_image']?>" class="card-img-top" alt="card1"></li>
+  <img src="img/<?php echo $data['product_image']?>" class="card-img-top" alt="card1" style="width: 255px; height: 200px">
   <div class="card-body">
     <h3 class="card-title"><?php echo '<font color="white">' . $data['product_name'] . '</font>'?></h3>
   </div>
