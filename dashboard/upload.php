@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <form action="" method="POST" enctype="multipart/form-data">
+        <form action="upload_controller.php" method="POST" enctype="multipart/form-data">
           <div class="container">
             <div class="box">
             <h3 class="mb-3 bg-white rounded shadow p-3">Add Product</h3>
@@ -89,50 +89,7 @@
             </div>
             <button type="submit" class="btn btn-primary mt-3 col-2 rounded shadow p-2" name="proses">Submit</button>
           </div>
-</form>
-
-          <?php
-          include "../config.php";
-
-          if(isset($_POST['proses']))
-          {	 
-             $product_name = $_POST['product_name'];
-             $product_price = $_POST['product_price'];
-             $product_status = $_POST['product_status'];
-             $network = $_POST['network'];
-             $link_product = $_POST['link_product'];
-             $currency = $_POST['currency'];
-
-             $product_image = $_FILES['product_image']['name'];
-             $tmp_name = $_FILES['product_image']['tmp_name'];
-
-             $type1 = explode('.',$product_image);
-             $type2 = $type1[1];
-
-             $newname = 'NFT'.time().'.'.$type2;
-
-             $ijin = array('jpg','jpeg','png','gif','mp4');
-
-             if(!in_array($type2,$ijin)){
-                 echo '<script>alert("Format File Salah")</script>';
-             }else{
-                 move_uploaded_file($tmp_name,'img/'.$newname);
-             }
-
-             $sql = mysqli_query($conn,"INSERT INTO tb_product (product_name,product_price,product_image,product_status,network,link_product,currency)
-             VALUES ('$product_name','$product_price','$product_image','$product_status','$network','$link_product','$currency')");
-
-            if ($sql) {
-            mysqli_close($conn); // Close connection
-            header("location:product.php"); // redirects to all records page
-            exit;
-            } else {
-   
-            }
-          }
-          ?>
-
-
+        </form>
 
     <div class="slider-background" id="sliders-background"></div>
     <script src="./dist/js/jquery.js"></script>
