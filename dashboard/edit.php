@@ -46,34 +46,13 @@
         </div>
 
         <?php 
-include "../config.php";
-$product_id = $_GET['product_id'];
-$qry = mysqli_query($conn, "SELECT * FROM tb_product WHERE product_id='$product_id'");
-$data = mysqli_fetch_array($qry); // fetch data
+        include "../config.php";
+        $product_id = $_GET['product_id'];
+        $qry = mysqli_query($conn, "SELECT * FROM tb_product WHERE product_id='$product_id'");
+        $data = mysqli_fetch_array($qry); // fetch data
+        ?>
 
-if (isset($_POST['update'])) // when click on Update button
-{
-    $product_name = $_POST['product_name'];
-    $product_price = $_POST['product_price'];
-    $product_image = $_FILES['product_image'];
-    $product_status = $_POST['product_status'];
-    $network = $_POST['network'];
-    $link_product = $_POST['link_product'];
-    $currency = $_POST['currency'];
-
-    $edit = mysqli_query($conn, "UPDATE tb_product SET product_name='$product_name', product_price='$product_price', product_image='$product_image',
-    product_status='$product_status', network='$network', link_product='$link_product', currency='$currency' WHERE product_id='$product_id'");
-
-    if ($edit) {
-        mysqli_close($conn); // Close connection
-        header("location:product.php"); // redirects to all records page
-        exit;
-    } else {
-       
-    }
-}
-?>
-        <form action="" method="POST">
+        <form action="edit_controller.php" method="POST">
           <div class="container">
             <div class="box">
             <h3 class="bg-white rounded shadow p-3 mb-3">Edit Product</h3>
