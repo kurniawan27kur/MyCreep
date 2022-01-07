@@ -1,6 +1,7 @@
 <?php 
 include "../config.php";
-$product_id = $_GET['product_id'];
+$product_id = $_POST['product_id'];
+
 $qry = mysqli_query($conn, "SELECT * FROM tb_product WHERE product_id='$product_id'");
 $data = mysqli_fetch_array($qry); // fetch data
 
@@ -30,11 +31,11 @@ if (isset($_POST['update'])) // when click on Update button
     }
 
     $edit = mysqli_query($conn, "UPDATE tb_product SET product_name='$product_name', product_price='$product_price',
-    product_status='$product_status', network='$network', link_product='$link_product', currency='$currency' WHERE product_id='$product_id'");
+    product_status='$product_status', product_image='$newname', network='$network', link_product='$link_product', currency='$currency' WHERE product_id='$product_id'");
 
     if ($edit) {
         mysqli_close($conn); // Close connection
-        header("location:product.php"); // redirects to all records page
+        header("location: product.php"); // redirects to all records page
         exit;
     } else {
        

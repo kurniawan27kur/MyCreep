@@ -52,11 +52,11 @@
         $data = mysqli_fetch_array($qry); // fetch data
         ?>
 
-        <form action="edit_controller.php" method="POST">
+        <form action="edit_controller.php" method="POST" enctype="multipart/form-data">
           <div class="container">
             <div class="box">
             <h3 class="bg-white rounded shadow p-3 mb-3">Edit Product</h3>
-            
+            <input type="text" value="<?= $product_id ?>" name="product_id" hidden>
             <div class="meng bg-white rounded shadow p-4">
             <div class="mb-3 col-12 bg-white rounded shadow p-2">
             <label for="product_name" class="form-label">Product Name</label>
