@@ -74,7 +74,7 @@
     <div class="card">
   <img src="img/<?php echo $data['product_image']?>" class="card-img-top" alt="card1" style="width: 255px; height: 200px">
   <div class="card-body">
-    <h3 class="card-title"><?php echo '<font color="white">' . $data['product_name'] . '</font>'?></h3>
+    <h4 class="card-title mb-0"><?php echo '<font color="white">' . $data['product_name'] . '</font>'?></h4>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item"><?php echo '<font color="white">' . $data['product_price']." ".$data['currency'] .'</font>'?></li>
