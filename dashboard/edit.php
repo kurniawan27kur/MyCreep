@@ -20,8 +20,8 @@
             <div class="slider-head">
                 <div class="d-block pt-4 pb-3 px-3 text-center">
                     <img src="./images/user/user.png" alt="user" class="slider-img-user mb-2">
-                    <p class="fw-bold mb-0 lh-1 text-white">YourName</p>
-                    <small class="text-white">YourAccount@gmail.com</small>
+                    <p class="fw-bold mb-0 lh-1 text-white">Kurniawan Azziz</p>
+                    <small class="text-white">Kurniawan@gmail.com</small>
                 </div>
             </div>
             <div class="slider-body px-1">
