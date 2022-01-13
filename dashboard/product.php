@@ -74,12 +74,12 @@
                             <tr>
                                 <td class="text-center" name="product_id"> <?php echo $data['product_id'] ?></td>
                                 <td> <?php echo $data['product_name'] ?></td>
-                                <td> <?php echo $data['product_price'] ?></td>
-                                <td> <img class="img-product" style="width: 40px; height: 40px;" src="http://localhost/mycreep/img/<?php echo $data['product_image'] ?>" alt=""></td>
-                                <td> <?php echo $data['product_status'] ?></td>
-                                <td> <?php echo $data['network'] ?></td>
+                                <td class="text-center"> <?php echo $data['product_price'] ?></td>
+                                <td> <img class="img-product rounded mx-auto d-block" style="width: 40px; height: 40px;" src="http://localhost/mycreep/img/<?php echo $data['product_image'] ?>" alt=""></td>
+                                <td class="text-center"> <?php echo $data['product_status'] ?></td>
+                                <td class="text-center"> <?php echo $data['network'] ?></td>
                                 <td class="link col-12 text-center" type="submit"> <a href="<?php echo $data['link_product']?>" class="text-decoration-none" target='_blank'>Klik Disini</a></td>
-                                <td> <?php echo $data['currency'] ?></td>
+                                <td class="text-center"> <?php echo $data['currency'] ?></td>
                                 <td class="edit col-12 text-center text-decoration-none" type="submit"> 
                                     <a class="text-decoration-none" style="color: green;" href="edit.php?product_id=<?php echo $data["product_id"];?>">Edit | </a>
                                     <a class="text-decoration-none" style="color: red;" href="delete.php?product_id=<?php echo $data["product_id"];?>">Delete</a>
