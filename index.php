@@ -54,10 +54,10 @@
 <section id="about" class="about text-center">
 <div class="display">
   <h2>What Is MyCreep</h2>
-    <p>MyCreep adalah kumpulan karya seni digital NFT.
-      Dimana pengunjung dapat melihat karya seni digital NFT yang ditampilkan.
-      Pengunjung hanya dapat melihat, jika tertarik untuk membeli karya seni digital NFT yang kami tampilkan dapat menghubungi kami
-      melalui kontak yang telah disediakan.</p>
+  <p>MyCreep adalah kumpulan karya seni digital NFT. 
+     Dimana pengunjung dapat melihat karya seni digital NFT yang ditampilkan. 
+     Pengunjung hanya dapat melihat, jika tertarik untuk membeli karya seni digital NFT yang kami tampilkan 
+     dapat menekan tombol BUY yang telah disediakan.</p>
     </div>
     </section>
 

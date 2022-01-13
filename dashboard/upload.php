@@ -67,7 +67,7 @@
             </div>
 
             <div class="mb-3 col-12 bg-white rounded shadow p-2">
-            <label for="product_status" class="form-label">Product Status</label>
+            <label for="product_status" class="form-label">Market</label>
             <input type="text" class="form-control" id="product_status" name="product_status">
             </div>
 

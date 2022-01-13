@@ -58,7 +58,7 @@
                             <td>Product Name</td>
                             <td>Product Price</td>
                             <td>Product Image</td>
-                            <td>Product Status</td>
+                            <td>Market</td>
                             <td>Network</td>
                             <td>Link Product</td>
                             <td>Currency</td>
